@@ -45,7 +45,7 @@ const defaultColumn: Partial<ColumnDef<TableContent>> = {
 				value={value as string}
 				onChange={(e) => {
 					setValue((prev: unknown) => e.target.value);
-					table.options.meta?.updateData(index, id, value);
+					table.options.meta?.updateData(index, id, e.target.value);
 				}}
 				onBlur={onBlur}
 			/>
